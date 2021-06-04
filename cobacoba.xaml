@@ -1,0 +1,236 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="cobacoba" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="804.8,1920.8" sap2010:WorkflowViewState.IdRef="cobacoba_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="cobacoba" sap:VirtualizedContainerService.HintSize="628.8,1756" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="tesDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  StarConnect'" sap:VirtualizedContainerService.HintSize="587.2,1663.2" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="96a30a9ca2cf12ae479d705137d1255a" Selector="&lt;html app='chrome.exe' title='StarConnect' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="553.6,1516" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="tes" />
+              <Variable x:TypeArguments="sd:DataTable" Name="errorDT" />
+              <Variable x:TypeArguments="x:Int32" Name="index" />
+              <Variable x:TypeArguments="x:Boolean" Name="tesExist" />
+              <Variable x:TypeArguments="x:Boolean" Name="entriesExist" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a02db142-51c8-4d8f-b3a9-825a90627a86" InformativeScreenshot="9578734e271713694d3633e174fba157" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='StarConnect - Google Chrome' /&gt;&lt;ctrl name='StarConnect' role='document' /&gt;&lt;ctrl role='grouping' idx='102' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:UiElementExists DisplayName="Element sudah terbuka?" Exists="[entriesExist]" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="21e9a517-3592-4536-8093-038a7f87fb7a" InformativeScreenshot="30b6e334600383dc6214df5d1cd65a52" Selector="&lt;html app='chrome.exe' title='StarConnect' /&gt;&lt;webctrl aaname='Element Entries' tag='A' omit:class='dropdown-item cursor py-1 ng-star-inserted' css-selector='body&amp;gt;app-root&amp;gt;app-admin-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;employee-table&amp;gt;div&amp;gt;employee-personal-form&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;global-hamburger-menu&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' innertext='Element Entries' /&gt;" TimeoutMS="2000" WaitForReady="NONE" />
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="512,981.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,814.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="435.2,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ddd440f-bf29-4759-a1bc-a081df6efcae" InformativeScreenshot="4c0a2f080386de93150e68c566ad8b95" Selector="&lt;html app='chrome.exe' title='StarConnect' /&gt;&lt;webctrl tag='SPAN' class='avatar avatar-lg rounded-circle bg-primary' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Garis sebelah Personal" sap:VirtualizedContainerService.HintSize="435.2,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:ClickImage.CursorPosition>
+                      <ui:CursorPosition Position="BottomRight">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:ClickImage.CursorPosition>
+                    <ui:ClickImage.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.6" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAMCAYAAACp13kFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAO7SURBVFhH5VffS9tQFN7f6EtfhIKIZRRlFKQgq78CFgmlUhHFqqiTEQZKCR0tsgqlOColSCcyJ3aghSIOK1Ro1Qe/nZvcpDcxrq0/HmYfvoec8+Xk5n733HPOu5vbezRxiAXvGHqmk8gXigZ20ohFZHiYvX8ealnkdzv4fq0cuvjaw/j4+KvCXWC3BZ9+Q5D55D1Unb6uxfMFfm20L/DtHXJz5PMq0Bz2ciGJyRHJyHKvhL4pBenjusBhMGIHt6u4aVSQnouit5/xZ6FWDE71eBexKZnbCQNh+CiWelizx2rUcLSjIDQkGTzrmw4ew75C/jgyl+2uk3BZQSaxgVDA5I7BMzSP5QKt3cZ9UwLfI7/IftYu8FEiSpsgIbCURYZd6bksYqNs48NY+HEnvM8F/lqEKtGGjW5A2SkindjDUYP8PxPoI79PTiLNy0MmlURECiOWF+I0LqBOs/hu35QQ2r4QvknQBQ5jcmYeHv8sYimNl54EAgP0P6zs8ANm4ZDWQtyIwuMXdrGsxx9DRFzLmxK4Rj4/+aZ3cW7afqcxSJsX0xxZ0DiDMkLckTRKlt2I7aHs7KP4zmteWyP++wQOHHYnzrNxOlAu37yt0wEMk2CUrX8Euy4wxfYryF8JdgZ9/XSots7sdgZ26MTnWhERdrPMabi27M8X2K1uviRaC9yoo3yiYeEj2R1ZefCZNtTvLkppSyY+Zce5aeOx+zeQq9m5Ol+NEn8Wm6dihjhR1bO/Z1g8OAIqWb1PCKaELOYCu4rYkUB0c0wQdyKLsmX7XwV2gSewCtVW4/gPu3CbaNZXK7YtAwRckT/A3pEwGEkic1LFtTOLWm4o9y8WmzYucEwTeSZaxbNDWyHumxBYHJMKJZSu3LKKCzxMjYrFdeIXyla2trEZ1DyVctQIBY16x2qmvbFpFcMly7jAC/siz8Qj8fQmS8HkqIw+VqcZx8QLC/za6KjJssMU+JHr8gE624zrchHrsjF/B1TzeuUxxAy1wcXfqcBluuap1noCcaxTE3hwWkP1kqEEhZWp7hGYN0beKNVNd78dT9mMOjIz9I5V52vIyPT8hBrcrsDGP60i42zI6EBvdpvA5mjjkeinH9RLJ562GfpoJjRy1/kNPasj3x/pom11n9CpwKzO0iiYd/7PcVLvuN9GDe5gweUUzZf0DrvSlvmMyebXWCSK3jUxzr9ja5/CCM0loebM+q1BXZrVYwdts22dRGBCus3Bjuxl6FBgYwyjUW6qOY+nv8ThG5Dh+/C/CTyOv8Dchr0rB544AAAAAElFTkSuQmCC" />
+                    </ui:ClickImage.Image>
+                    <ui:ClickImage.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="afd8305a-20aa-4c77-9bff-3ce9ee25a2af">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:ClickImage.Target>
+                  </ui:ClickImage>
+                  <ui:UiElementExists DisplayName="Element sudah terbuka?" Exists="[entriesExist]" sap:VirtualizedContainerService.HintSize="435.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="21e9a517-3592-4536-8093-038a7f87fb7a" InformativeScreenshot="30b6e334600383dc6214df5d1cd65a52" Selector="&lt;html app='chrome.exe' title='StarConnect' /&gt;&lt;webctrl aaname='Element Entries' tag='A' omit:class='dropdown-item cursor py-1 ng-star-inserted' css-selector='body&amp;gt;app-root&amp;gt;app-admin-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;employee-table&amp;gt;div&amp;gt;employee-personal-form&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;global-hamburger-menu&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' innertext='Element Entries' /&gt;" TimeoutMS="2000" WaitForReady="NONE" />
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,231.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,152.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[entriesExist.ToString]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not entriesExist" />
+              </ui:InterruptibleWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="512,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a516285-166c-4189-a74a-35e35264640f" InformativeScreenshot="427fe79a0a607ed448cf39f3314fd95a" Selector="&lt;webctrl aaname='Element Entries' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
